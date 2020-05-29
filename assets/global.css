@@ -176,7 +176,20 @@ p.small {
 
 /* Navbar section */
 
+.navcontainer {
+  position: fixed;
+  height: 40px;
+  width: 100vw;
+  background: lightblue
+}
 
+.navlink {
+  height: 100%;
+}
+
+.navlink a {
+  font-size: 12px;
+}
 
 /* End of Navbar */
 
