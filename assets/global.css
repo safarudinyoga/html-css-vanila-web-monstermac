@@ -84,7 +84,7 @@ p.small {
 }
 
 .light {
-  font-weight: 300;
+  font-weight: 200;
 }
 .reg {
   font-weight: 400;
@@ -174,9 +174,14 @@ p.small {
   flex-direction: column;
 }
 
+/* html { */
+  /* scroll-padding-top: 40px; height of sticky header */
+/* } */
+
 /* Navbar section */
 
 .navcontainer {
+  z-index: 9;
   position: fixed;
   top: 0;
   left: 0;
@@ -245,14 +250,127 @@ ul li a {
     margin: 0;
     position: absolute;
     top: 100%;
-    /* left: -60px; */
-    height: 630px;
+    left: -60px;
+    height: 240px;
     background-color: rgba(0, 0, 0, 1);
   }
 
+  /* inside solutions hover */
+  .wrapper-solution {
+    height: 100%;
+  }
+  .grid-one {
+    height: 100%;
+    width: 100%;
+  }
+    /* grid one */
+    .wrapper-content-one {
+      width: 100px;
+      height: 200px;
+    }
+    .wrapper-content-one p {
+      font-size: 8px;
+      margin: 30px 0 13px;
+    }
+    .wrapper-content-one h6 {
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
+
+  .grid-two {
+    width: 100%;
+    height: 100%;
+  }
+    /* .grid-two */
+    .wrapper-content-two {
+      width: 100px;
+      height: 200px;
+    }
+    .wrapper-content-two p {
+      font-size: 8px;
+      margin: 30px 0 13px;
+    }
+    .wrapper-content-two h6 {
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
+
+
+  .grid-three {
+    width: 100%;
+    height: 100%;
+  }
+  /* grid-three */
+    .wrapper-content-three {
+      background-color: lightgreen;
+      width: 100%;
+      height: 100%;
+    }
+
+  .grid-four {
+    width: 100%;
+    height: 100%;
+  }
+  /* grid-four */
+    .wrapper-content-four {
+      width: 90%;
+      height: 100%;
+    }
+    .wrapper-content-four p:first-child {
+      font-size: 8px;
+      margin: 30px 0 8px;
+    }
+    .wrapper-content-four h3 {
+      font-weight: 200;
+      width: 300px;
+      margin-bottom: 40px;
+    }
+
   /* dropdown navbar */
 
-
 /* End of Navbar */
+
+/* section one */
+.section-one {
+  width: 100%;
+  height: 730px;
+  position: relative;
+  background-color: lightskyblue;
+}
+  .section-one img {
+    /* background-image: ; */
+    width: 100%;
+  }
+  .section-one h1 {
+    font-size: 96px;
+    width: 900px;
+    line-height: 112px;
+  }
+  .section-one h6 {
+    font-weight: 300;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 65%;
+    left: 50%;
+  }
+/* end section one */
+
+/* section two */
+.section-two {
+  width: 100%;
+  height: 680px;
+  position: relative;
+  background-color: #272727;
+}
+ .section-two h2 {
+   font-size: 48px;
+   position: absolute;
+   transform: translate(-50%,-50%);
+   top: 50%;
+   left: 50%;
+ }
+/* end section two */
+
+
 
 
