@@ -421,12 +421,12 @@ ul li a {
   }
   .section-three .wrappercontent {
     width: 1245px;
-    height: 352px;
+    height: 508px;
   }
     .wrappercontent .carouselimage {
       width: 100%;
       height: 352px;
-      background-color: violet;
+      background-color: lightblue;
       position: relative;
     }
       .carouselimage .arrowleft {
@@ -448,11 +448,144 @@ ul li a {
         -o-transform: translate(-50%,-50%) rotate(-90deg);
         top: 50%;
         right: 60px;
-}
-
-    .wrappercontent .carouselcontent {
+      }
+    .section-three .wrappercontent .carouselcontent {
       width: 100%;
       height: 156px;
       background: #272727;
     }
+      .carouselcontent .content1 {
+        width: 45%;
+        height: 100%;
+      }
+        .carouselcontent .content1 h1 {
+          font-size: 72px;
+          font-weight: 300;
+          letter-spacing: 0.02em;
+        }
+      .carouselcontent .content2 {
+        width: 27.5%;
+        height: 100%;
+      }
+        .content2 h6 {
+          margin: 25px 15px;
+        }
+        .content2 p {
+          margin: 0 15px;
+          font-size: 14px;
+        }
+        .content2 img {
+          margin: 0 10px;
+          transform: rotate(-90deg);
+          -webkit-transform: rotate(-90deg);
+          -moz-transform: rotate(-90deg);
+          -ms-transform: rotate(-90deg);
+          -o-transform: rotate(-90deg);
+        }
+      .carouselcontent .content3 {
+        width: 27.5%;
+        height: 100%;
+      }
+        .content3 h6 {
+          margin: 25px 15px;
+        }
 /* end section three */
+
+/* section four */
+.section-four {
+  padding: 118px 61px 250px;
+}
+  .section-four button {
+    border-radius: 11px;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    -ms-border-radius: 11px;
+    -o-border-radius: 11px;
+    border: none;
+    padding: none;
+    background: none;
+    font-size: 10px;
+    font-weight: 300;
+    width: 70px;
+    letter-spacing: 0.02em;
+  }
+  .section-four .wrapperbutton {
+    margin: 43px 0 34px;
+    padding: 0 465px;
+  }
+  .section-four .wrappercontent {
+    width: 1245px;
+    height: 500px;
+  }
+    .section-four .wrappercontent .carouselimage {
+      width: 100%;
+      height: 325px;
+      background-color: lightblue;
+      position: relative;
+    }
+      .carouselimage .arrowleft {
+        position: absolute;
+        transform: translate(-50%,-50%) rotate(90deg);
+        -webkit-transform: translate(-50%,-50%) rotate(90deg);
+        -moz-transform: translate(-50%,-50%) rotate(90deg);
+        -ms-transform: translate(-50%,-50%) rotate(90deg);
+        -o-transform: translate(-50%,-50%) rotate(90deg);
+        top: 50%;
+        left: 88px;
+      }
+      .carouselimage .arrowright {
+        position: absolute;
+        transform: translate(-50%,-50%) rotate(-90deg);
+        -webkit-transform: translate(-50%,-50%) rotate(-90deg);
+        -moz-transform: translate(-50%,-50%) rotate(-90deg);
+        -ms-transform: translate(-50%,-50%) rotate(-90deg);
+        -o-transform: translate(-50%,-50%) rotate(-90deg);
+        top: 50%;
+        right: 88px;
+      }
+    .section-four .wrappercontent .carouselcontent {
+      width: 100%;
+      height: 156px;
+    }
+      .section-four .carouselcontent h3 {
+        font-weight: 300;
+      }
+      .section-four .carouselcontent h6 {
+        font-weight: 300;
+      }
+      .section-four .carouselcontent img {
+        margin: 2px 15px;
+        transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+      }
+/* end section four */
+
+/* section five */
+.section-five {
+  width: 100%;
+  height: 282px;
+  background-color: grey;
+  position: relative;
+}
+  .section-five p {
+    font-weight: 300;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    bottom: 10%;
+    left: 50%;
+  }
+  .section-five div {
+    margin: 8px auto;
+    border: 1px solid #ffffff;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    bottom: 5%;
+    left: 50%;
+    width: 32px;
+  }
+/* end section five */
+
+
