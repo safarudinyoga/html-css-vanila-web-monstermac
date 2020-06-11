@@ -174,10 +174,6 @@ p.small {
   flex-direction: column;
 }
 
-/* html { */
-  /* scroll-padding-top: 40px; height of sticky header */
-/* } */
-
 /* Navbar section */
 
 .navcontainer {
@@ -861,6 +857,8 @@ ul li a {
       width: auto;
     }
 /* end section seven */
+
+
 
 
 
