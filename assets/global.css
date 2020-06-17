@@ -212,20 +212,61 @@ ul li a {
 
 .navlink {
   height: 100%;
+  width: 350px;
 }
-
   /* dropdown navbar */
 
   ul li:hover {
     background-color: rgba(0, 0, 0, 1);
   }
-
+  ul .vending {
+    transition: width 0.2s ease-in-out;
+    -webkit-transition: width 0.2s ease-in-out;
+    -moz-transition: width 0.2s ease-in-out;
+    -ms-transition: width 0.2s ease-in-out;
+    -o-transition: width 0.2s ease-in-out;
+  }
+  ul .vending a {
+    margin: 0 auto;
+  }
+  ul .vending img{
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    margin-left: 5px;
+  }
+  ul .vending:hover {
+    height: 22px;
+    width: 130px;
+    margin: auto 0;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: #FF4444;
+  }
+  ul .vending:hover img {
+    margin-left: 20%;
+  }
+  ul .vending:hover a {
+    justify-content: space-around;
+  }
   ul li:hover .arrowdown {
     display: block;
   }
 
   ul li:hover .solution {
     display: block;
+  }
+
+  .navlink .search {
+    width: 50px ;
+  }
+  .navlink .li {
+    width: 150px !important;
   }
 
   .navlink .arrowdown {
@@ -242,7 +283,8 @@ ul li a {
 
   .solution {
     display: none;
-    width: 1366px;
+    width: calc(20% + 100vw);
+    /* width: 100vw; */
     margin: 0;
     position: absolute;
     top: 100%;
@@ -510,7 +552,7 @@ ul li a {
     padding: 0 465px;
   }
   .section-four .wrappercontent {
-    width: 1245px;
+    width: 100%;
     height: 500px;
   }
     .section-four .wrappercontent .carouselimage {
@@ -779,6 +821,9 @@ ul li a {
   .section-seven .about {
     /* width: 100%; */
     height: 300px;
+  }
+  .section-seven .headoffice {
+    padding-right: 70px;
   }
   .section-seven .headoffice .address {
     font-weight: 300;

@@ -1,7 +1,7 @@
 html, body {
     overflow-x: hidden;
   }
-  
+
   * {
     margin: 0;
     padding: 0;
@@ -25,29 +25,29 @@ html, body {
     -moz-appearance: none;
     appearance: none;
   }
-  
+
   input[type=number]::-webkit-inner-spin-button,
     input[type=number]::-webkit-outer-spin-button {
       -webkit-appearance: none
     }
-  
+
   button {
     cursor: pointer;
   }
-  
+
   body {
     background: white;
   }
-  
+
   ::-webkit-scrollbar {
     width: 0
   }
-  
+
   ::-webkit-scrollbar-track {
     border-radius: 5px;
     background: transparent
   }
-  
+
   .t-white {
     color: #ffffff;
   }
@@ -61,7 +61,7 @@ html, body {
   .indent-30 {
     text-indent: 30px;
   }
-  
+
   h1 {
     font-size: 54px;
   }
@@ -89,7 +89,7 @@ html, body {
   p.small {
     font-size: 8px;
   }
-  
+
   .light {
     font-weight: 200;
   }
@@ -105,7 +105,7 @@ html, body {
   .bold {
     font-weight: 700;
   }
-  
+
   .center-align {
     text-align: center;
   }
@@ -118,14 +118,14 @@ html, body {
   .justify-align {
     text-align: justify;
   }
-  
+
   .uppercase {
     text-transform: uppercase;
   }
   .italic {
     font-style: italic;
   }
-  
+
   .center-fixed {
     position: fixed;
     transform: translate(-50%, -50%);
@@ -152,7 +152,7 @@ html, body {
     right: 0;
     bottom: 0;
   }
-  
+
   .flex {
     display: flex;
   }
@@ -232,13 +232,54 @@ ul li a {
   ul li:hover {
     background-color: rgba(0, 0, 0, 1);
   }
-
+  ul .vending {
+    transition: width 0.2s ease-in-out;
+    -webkit-transition: width 0.2s ease-in-out;
+    -moz-transition: width 0.2s ease-in-out;
+    -ms-transition: width 0.2s ease-in-out;
+    -o-transition: width 0.2s ease-in-out;
+  }
+  ul .vending a {
+    margin: 0 auto;
+  }
+  ul .vending img{
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    margin-left: 5px;
+  }
+  ul .vending:hover {
+    height: 22px;
+    width: 130px;
+    margin: auto 0;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: #FF4444;
+  }
+  ul .vending:hover img {
+    margin-left: 20%;
+  }
+  ul .vending:hover a {
+    justify-content: space-around;
+  }
   ul li:hover .arrowdown {
     display: block;
   }
 
   ul li:hover .solution {
     display: block;
+  }
+
+  .navlink .search {
+    width: 50px ;
+  }
+  .navlink .li {
+    width: 150px !important;
   }
 
   .navlink .arrowdown {
@@ -255,7 +296,8 @@ ul li a {
 
   .solution {
     display: none;
-    width: 1366px;
+    width: calc(20% + 100vw);
+    /* width: 100vw; */
     margin: 0;
     position: absolute;
     top: 100%;
@@ -349,6 +391,9 @@ ul li a {
   .section-seven .about {
     /* width: 100%; */
     height: 300px;
+  }
+  .section-seven .headoffice {
+    padding-right: 70px;
   }
   .section-seven .headoffice .address {
     font-weight: 300;
