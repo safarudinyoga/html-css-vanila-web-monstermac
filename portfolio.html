@@ -6,7 +6,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="/assets/flexboxgrid.css">
   <link rel="stylesheet" href="/assets/portfolio.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" rel="stylesheet">
 </head>
 <body>
     <div>
@@ -99,7 +99,84 @@
 
       <!-- section 2 -->
       <section class="section-two">
-        <div class="panelfilter">
+        <div class="panelfilter row" id="panelfilter" onclick="toggleFilter()">
+          <div class="col-sm-3 flex justify-start f-a-center category">
+            <p class="t-black uppercase left-align reg">category filter :</p>
+          </div>
+          <div class="col-sm-2 flex justify-evenly f-a-center">
+            <p class="t-grey uppercase center-align reg italic">choose industry</p>
+            <img src="/assets/icon/arrowdown.svg" alt="">
+          </div>
+          <div class="col-sm-2 flex justify-evenly f-a-center">
+            <p class="t-grey uppercase center-align reg italic">topics</p>
+            <img src="/assets/icon/arrowdown.svg" alt="">
+          </div>
+          <div class="col-sm-2 flex justify-evenly f-a-center">
+            <p class="t-grey uppercase center-align reg italic">products</p>
+            <img src="/assets/icon/arrowdown.svg" alt="">
+          </div>
+          <div class="col-sm-3 flex justify-evenly f-a-center sort">
+            <p class="t-black uppercase left-align reg">sort by :</p>
+            <img src="/assets/icon/arrowdown.svg" alt="">
+          </div>
+        </div>
+        <div class="panelfilteropen flex f-direction-column justify-betweens" id="panelfilteropen" onclick="toggleFilter()">
+          <div class="flex f-a-center row wrapper">
+            <div class="col-sm-3 flex justify-start f-a-center category">
+              <p class="t-black uppercase left-align reg">category filter :</p>
+            </div>
+            <div class="col-sm-2 flex justify-evenly f-a-center">
+              <p class="t-grey uppercase center-align reg italic">choose industry</p>
+              <img src="/assets/icon/arrowdown.svg" alt="">
+            </div>
+            <div class="col-sm-2 flex justify-evenly f-a-center">
+              <p class="t-grey uppercase center-align reg italic">topics</p>
+              <img src="/assets/icon/arrowdown.svg" alt="">
+            </div>
+            <div class="col-sm-2 flex justify-evenly f-a-center">
+              <p class="t-grey uppercase center-align reg italic">products</p>
+              <img src="/assets/icon/arrowdown.svg" alt="">
+            </div>
+            <div class="col-sm-3 flex justify-evenly f-a-center sort">
+              <p class="t-black uppercase left-align reg">sort by :</p>
+              <img src="/assets/icon/arrowdown.svg" alt="">
+            </div>
+          </div>
+          <div class="dropdown row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2 flex f-direction-column justify-start content">
+              <p class="medium t-black right-align uppercase">Sodales</p>
+              <p class="medium t-black right-align uppercase">Aliquam</p>
+              <p class="medium t-black right-align uppercase">Vitae</p>
+              <p class="medium t-black right-align uppercase">Pellentesque</p>
+              <p class="medium t-black right-align uppercase">Blandit</p>
+              <p class="medium t-black right-align uppercase">Sit</p>
+              <p class="medium t-black right-align uppercase">Ultrices</p>
+            </div>
+            <div class="col-sm-2 flex f-direction-column justify-start content">
+              <p class="medium t-black right-align uppercase">Sodales</p>
+              <p class="medium t-black right-align uppercase">Aliquam</p>
+              <p class="medium t-black right-align uppercase">Vitae</p>
+              <p class="medium t-black right-align uppercase">Pellentesque</p>
+              <p class="medium t-black right-align uppercase">Blandit</p>
+              <p class="medium t-black right-align uppercase">Sit</p>
+              <p class="medium t-black right-align uppercase">Ultrices</p>
+            </div>
+            <div class="col-sm-2 flex f-direction-column justify-start content">
+              <p class="medium t-black right-align uppercase">Sodales</p>
+              <p class="medium t-black right-align uppercase">Aliquam</p>
+              <p class="medium t-black right-align uppercase">Vitae</p>
+              <p class="medium t-black right-align uppercase">Pellentesque</p>
+              <p class="medium t-black right-align uppercase">Blandit</p>
+              <p class="medium t-black right-align uppercase">Sit</p>
+              <p class="medium t-black right-align uppercase">Ultrices</p>
+            </div>
+            <div class="col-sm-3 flex f-direction-column justify-start content">
+              <p class="medium t-black right-align uppercase">newest</p>
+              <p class="medium t-black right-align uppercase">price</p>
+              <p class="medium t-black right-align uppercase">place</p>
+            </div>
+          </div>
           <button class="t-black center-align semi-light">Apply</button>
         </div>
         <div class="contentportfolio flex f-direction-column justify-between f-a-center">
@@ -267,5 +344,23 @@
         </div>
       </footer>
     </div>
+
+    <script>
+      function toggleFilter() {
+        let panelfilter = document.getElementById('panelfilter')
+        let panelfilteropen = document.getElementById('panelfilteropen')
+        console.log(panelfilter);
+
+        if(panelfilter.style.display === 'none') {
+          panelfilter.style.display = 'flex'
+          panelfilteropen.style.display = 'none'
+        } else {
+          panelfilter.style.display = 'none'
+          panelfilteropen.style.display = 'flex'
+        }
+
+
+      }
+    </script>
 </body>
 </html>

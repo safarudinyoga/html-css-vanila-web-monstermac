@@ -54,6 +54,9 @@ html, body {
   .t-black {
     color: #000000;
   }
+  .t-grey {
+    color: #B9B9B9;
+  }
 
   h1 {
     font-size: 54px;
@@ -114,6 +117,9 @@ html, body {
 
   .uppercase {
     text-transform: uppercase;
+  }
+  .italic {
+    font-style: italic;
   }
 
   .center-fixed {
@@ -215,6 +221,7 @@ ul li a {
 
 .navlink {
   height: 100%;
+  width: 350px;
 }
 
   /* dropdown navbar */
@@ -481,14 +488,57 @@ ul li a {
   padding: 20px 61px;
   background-color: #ffffff;
 }
+  .section-two .row {
+    margin: 0;
+  }
   .section-two .panelfilter {
+    width: 100%;
+    height: 61px;
+    background: #F1F1F1;
+    border-radius: 3px;
+  }
+    .section-two .panelfilter p {
+      letter-spacing: 0.12em;
+    }
+    .section-two .panelfilter .category {
+      padding-left: 26px;
+    }
+    .section-two .panelfilter .sort {
+      padding: 0 26px 0 170px;
+    }
+  .section-two .panelfilteropen {
     width: 100%;
     height: 325px;
     background: #F1F1F1;
     border-radius: 3px;
+    display: none;
     position: relative;
   }
-    .section-two .panelfilter button {
+    .section-two .panelfilteropen p {
+      letter-spacing: 0.12em;
+    }
+    .section-two .panelfilteropen .category {
+      padding-left: 26px;
+    }
+    .section-two .panelfilteropen .sort {
+      padding: 0 26px 0 170px;
+    }
+    .section-two .panelfilteropen .wrapper {
+      width: 100%;
+      height: 61px;
+    }
+    .section-two .panelfilteropen .dropdown {
+      width: 100%;
+      /* height: 100%; */
+    }
+    .section-two .panelfilteropen .dropdown .content {
+      padding: 20px 80px 0 0;
+    }
+    .section-two .panelfilteropen .dropdown p {
+      letter-spacing: 0.12em;
+      margin: 8px 0;
+    }
+    .section-two .panelfilteropen button {
       width: 225px;
       height: 45px;
       background: #FFFFFF;

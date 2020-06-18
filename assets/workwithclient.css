@@ -225,6 +225,7 @@ ul li a {
 
 .navlink {
   height: 100%;
+  width: 350px;
 }
 
   /* dropdown navbar */
